@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="calculator.svg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    <script src="calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="layout">
+            <div class="row">
+                <button value="AC"id="clear" onclick="clr()">AC</button>
+                <button value="%" onclick="dis('%')">%</button>
+                <button value="" onclick="backspace()">C</button>
+                <button value="/" onclick="dis('/')">/</button>
+            </div>
+            <div class="row">
+                <button value="7" onclick="dis('7')">7</button>
+                <button value="8" onclick="dis('8')">8</button>
+                <button value="9" onclick="dis('9')">9</button>
+                <button value="*" onclick="dis('*')">X</button>
+            </div>
+            <div class="row">
+                <button value="4" onclick="dis('4')">4</button>
+                <button value="5" onclick="dis('5')">5</button>
+                <button value="6" onclick="dis('6')">6</button>
+                <button value="-" onclick="dis('-')">-</button>
+            </div>
+            <div class="row">
+                <button value="1" onclick="dis('1')">1</button>
+                <button value="2" onclick="dis('2')">2</button>
+                <button value="3" onclick="dis('3')">3</button>
+                <button value="+" onclick="dis('+')">+</button>
+            </div>
+            <div class="row">
+                <button value="00" onclick="dis('00')">00</button>
+                <button value="0" onclick="dis('0')">0</button>
+                <button value="." onclick="dis('.')">.</button>
+                <button value="="  id="solve" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
